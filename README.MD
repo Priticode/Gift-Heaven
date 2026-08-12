@@ -128,8 +128,9 @@ The Gift Heaven website was successfully deployed and is accessible through the 
 
 gift.pritu.online
 
+
 ### Website Screenshot
 
-![](/giftoutput.png)
+![Gift Heaven Website](./giftoutput.png)
 
 
