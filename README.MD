@@ -98,42 +98,31 @@ Finally, I opened `http://gift.pritu.online` in the browser and checked the depl
 ssh -i key.pem ec2-user@PUBLIC-IP
 
 sudo yum install nginx -y
-
 sudo systemctl start nginx
-
 sudo systemctl status nginx
 
 cd /usr/share/nginx/html
 
 sudo nano gift.html
-
 sudo nano /etc/nginx/nginx.conf
 
 sudo nginx -t
-
 sudo systemctl restart nginx
-
 sudo systemctl reload nginx
 
 ls
 
 cat /usr/share/nginx/html/gift.html
 
+```
 
- Output
+### Output
 
 The Gift Heaven website was successfully deployed and is accessible through the custom domain.
 
- Live Website
+Live Website
 
 gift.pritu.online
 
-
-#Website Screenshot
-
+<h3> Screenshot</h3>
 ![](./giftoutput.png)
-
-
-
-
-
