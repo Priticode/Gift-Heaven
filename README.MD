@@ -130,5 +130,6 @@ gift.pritu.online
 
 ### Website Screenshot
 
-![](giftoutput.png)
+![](/giftoutput.png)
+
 
