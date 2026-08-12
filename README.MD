@@ -41,45 +41,45 @@ I connected to the EC2 Linux server using SSH.
 
 ### Step 3: Install Nginx
 
-```bash
 sudo yum install nginx -y
 
 I installed Nginx on the EC2 server using the `sudo dnf install nginx -y` command. Nginx is used as the web server to serve the website to users.
 
- Step 4: Start Nginx
+ ## Step 4: Start Nginx
 
 After installing Nginx, I started the Nginx service using `sudo systemctl start nginx`. I also checked the service status to make sure Nginx was running correctly.
 
- Step 5: Deploy Website File
+ ## Step 5: Deploy Website File
 
 I went to the Nginx website directory `/usr/share/nginx/html` and added the `gift.html` website file there. This allowed Nginx to serve the Gift Heaven website.
 
- Step 6: Configure Nginx
+## Step 6: Configure Nginx
 
 I opened the Nginx configuration file `/etc/nginx/nginx.conf` and made the required configuration changes for the website.
 
- Step 7: Test Nginx Configuration
+  ## Step 7: Test Nginx Configuration
 
 After making the changes, I tested the Nginx configuration using `sudo nginx -t`. The test was successful and showed that the configuration syntax was correct.
 
- Step 8: Restart Nginx
+ ## Step 8: Restart Nginx
 
 After the configuration was successful, I restarted Nginx using `sudo systemctl restart nginx`. This applied the updated configuration to the server.
 
- Step 9: Configure Security Group
+  ## Step 9: Configure Security Group
 
 I configured the AWS EC2 Security Group and allowed the required ports. Port 22 was used for SSH connection and port 80 was used to access the website through HTTP.
 
-Step 10: Configure DNS
+ ## Step 10: Configure DNS
 
 I connected the custom domain `gift.pritu.online` to the EC2 server using DNS. The domain was pointed to the Public IP address of the EC2 instance.
 
- Step 11: Test the Website
+## Step 11: Test the Website
 
 Finally, I opened `http://gift.pritu.online` in the browser and checked the deployed Gift Heaven website. The website was successfully accessible through the custom domain.
 
 ```
-### Commands Used
+```
+## Commands Used
 ssh -i key.pem ec2-user@PUBLIC-IP
 
 sudo yum install nginx -y
@@ -103,8 +103,8 @@ sudo systemctl reload nginx
 ls
 
 cat /usr/share/nginx/html/gift.html
-
-
+```
+```
 ### Output
 
 The Gift Heaven website was successfully deployed and is accessible through the custom domain.
