@@ -120,17 +120,20 @@ ls
 cat /usr/share/nginx/html/gift.html
 
 
-## Output
+ Output
 
 The Gift Heaven website was successfully deployed and is accessible through the custom domain.
 
-### Live Website
+ Live Website
 
 gift.pritu.online
 
 
-### Website Screenshot
+#Website Screenshot
 
-![Gift Heaven Website](./giftoutput.png)
+![](./giftoutput.png)
+
+
+
 
 
